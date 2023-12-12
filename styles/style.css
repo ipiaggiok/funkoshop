@@ -12,5 +12,36 @@
     box-sizing: border-box;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: Raleway, Verdana, sans-serif;
+    font-style: normal;
+}
+
 
 /*  STYLES  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #30343F;
+}
+
+.funkoshop-logo {
+    display: flex;
+    width: 372px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
