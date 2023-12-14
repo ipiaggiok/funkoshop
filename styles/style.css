@@ -1,4 +1,4 @@
-            /*  IMPORTS  */
+    /*  IMPORTS  */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
@@ -130,8 +130,66 @@ body {
 /* banner */
 
 .banner {
-    background-color: blueviolet;
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 400px;
+    padding: var(--spacing-128);
+    overflow: hidden;
 }
 
+.banner::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1; /* Coloca el pseudoelemento detrás del contenido */
+    background-image: url(../img/funkos-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.banner__content {
+    z-index: 1; 
+    color: var(--light-font-solid);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px
+}
+
+.banner__content p {
+    font-family: var(--alternative-font);
+}
+
+.banner__title {
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+}
+
+.banner__description {
+    font-size: var(--font-small);
+    font-weight: 300;
+}
+
+.banner__link {
+    font-family: var(--base-font);
+    background-color: var(--light-bg-solid);
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color: var(--dark-solid);
+    padding: 10px 50px;
+    border-radius: 50px;
+    margin: 20px 0
+}
+
+.banner__link:hover {
+    background-color: rgb(167, 167, 167);
+    /* transition: all; */
+    transition: all .2s ease-in-out;
+}
