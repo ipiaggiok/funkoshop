@@ -90,6 +90,10 @@ body {
     font-style: normal;
 }
 
+main {
+    padding: 0 150px;
+}
+
 
             /*  STYLES  */
 
@@ -98,8 +102,12 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 110px;
+    padding: 15px 110px;
     background-color: var(--dark-bg-solid);
+}
+
+.navbar__img {
+    max-width: 260px;
 }
 
 .navbar .navbar__menu {
@@ -107,15 +115,6 @@ body {
     gap: var(--spacing-48);
     align-items: center;
 }
-
-.funkoshop-logo {
-    display: flex;
-    width: 372px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
 
 .navbar .navbar__menu a {
     color: var(--light-font-solid);
@@ -167,17 +166,17 @@ body {
     font-family: var(--alternative-font);
 }
 
-.banner__title {
+.banner__title, .main__card__title {
     font-size: var(--font-xlarge);
     font-weight: 500;
 }
 
-.banner__description {
+.banner__description, .main__card__description {
     font-size: var(--font-small);
     font-weight: 300;
 }
 
-.banner__link {
+.banner__link, .main__card__link {
     font-family: var(--base-font);
     background-color: var(--light-bg-solid);
     font-size: var(--font-medium);
@@ -192,4 +191,57 @@ body {
     background-color: rgb(167, 167, 167);
     /* transition: all; */
     transition: all .2s ease-in-out;
+}
+
+/* Main Cards */
+
+.main__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+}
+
+.main__card__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main__card__reverse .main__card__content {
+    display: flex;
+    justify-content: center;
+}
+
+.main__card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+    width: 60%;
+}
+
+.main__card__title {
+    font-size: var(--font-display);
+}
+
+.main__card__description {
+    font-size: var(--font-large);
+}
+
+.main__card__link {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    max-width: 250px;
+}
+
+.main__card__content hr {
+    border: solid 2px var(--primary-solid);
+}
+
+/* Slider y Cards */
+
+.news__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
 }
