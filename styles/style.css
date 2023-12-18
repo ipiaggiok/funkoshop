@@ -90,7 +90,7 @@ body {
     font-style: normal;
 }
 
-main {
+main, footer {
     padding: 0 150px;
 }
 
@@ -300,3 +300,44 @@ main {
     font-weight: 700;
     color: var(--secondary-solid);
 }
+
+/* Footer */
+
+#footer {
+    height: 345px;
+    width: 100%;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 300;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: flex-end;
+}
+
+.links__pages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__logo {
+    width: 150px;
+    display: inline-block;
+}
+
+.licence {
+    text-align: center;
+}
+
+
