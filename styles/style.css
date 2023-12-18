@@ -304,14 +304,14 @@ main, footer {
 /* Footer */
 
 #footer {
-    height: 345px;
+    height: 250px;
     width: 100%;
     background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
     font-family: var(--alternative-font);
     font-size: var(--font-medium);
     font-weight: 300;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -341,3 +341,28 @@ main, footer {
 }
 
 
+/* Shop */
+
+.main__shop {
+    display: flex;
+}
+
+.filters {
+    width: 250px;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.filters fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .precio {
+    display: flex;
+    
+}

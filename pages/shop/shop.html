@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F U N K O S H O P</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+  </head>
+  <body>
+    <header>
+      <navbar class="navbar">
+        <picture class="navbar__img">
+          <a href="../../index.html">
+            <img src="/img/branding/logo_light_horizontal.svg" alt="funkoshop logo">
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item"> 
+            <a class="navbar__link" href="#">CONTACTO</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">
+              <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+            </a>
+          </li>
+        </ul>
+      </navbar>
+    </header>
+
+    <main id="main main__shop">
+      <section class="filters">
+        <label for="item">buscar <br>
+          <input name="item" id="item" type="text" placeholder="item o categoria">
+        </label>
+        <label for="order">ordenar por <br>
+          <select name="order" id="order" aria-placeholder="Mayor a menor">
+            <option value="min">menor precio</option>
+            <option value="max">mayor precio</option>
+          </select>
+        </label>
+        <p>precio</p>
+        <label for="min-price">min
+          <input name="min-price" id="min-price" type="text" placeholder="0">
+        </label>
+        <p>-</p>
+        <label for="max-price">min
+          <input name="max-price" id="max-price" type="text" placeholder="0">
+        </label>
+        <fieldset>
+          <legend>filtrar</legend>
+          <label for="nuevos">
+            <input name="nuevos" id="nuevos" type="checkbox">nuevos
+          </label>
+          <label for="ofertas">
+            <input name="ofertas" id="ofertas" type="checkbox">ofertas
+          </label>
+          <label for="ed-especial">
+            <input name="ed-especial" id="ed-especial" type="checkbox">edición especial
+          </label>
+          <label for="favoritos">
+            <input name="favoritos" id="favoritos" type="checkbox">favoritos
+          </label>
+        </fieldset>
+      </section>
+      <!-- <section class="news shop__cards">
+        <section class="news__slider">
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/star-wars/trooper-1.webp" alt="imagen de figura funkopop de stormtrooper">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">star wars</p>
+              <p class="title">stormtrooper lightsaber</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+            
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/pokemon/pidgeotto-1.webp" alt="imagen de figura funkopop de pidgeotto">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">pokemon</p>
+              <p class="title">pidgeoto</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/harry-potter/luna-1.webp" alt="imagen de figura funkopop de luna lovegood con mascara de leon">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">harry potter</p>
+              <p class="title">luna lovegood lion mask</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>            
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/star-wars/trooper-1.webp" alt="imagen de figura funkopop de stormtrooper">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">star wars</p>
+              <p class="title">stormtrooper lightsaber</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+            
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/pokemon/pidgeotto-1.webp" alt="imagen de figura funkopop de pidgeotto">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">pokemon</p>
+              <p class="title">pidgeoto</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/harry-potter/luna-1.webp" alt="imagen de figura funkopop de luna lovegood con mascara de leon">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">harry potter</p>
+              <p class="title">luna lovegood lion mask</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>            
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/star-wars/trooper-1.webp" alt="imagen de figura funkopop de stormtrooper">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">star wars</p>
+              <p class="title">stormtrooper lightsaber</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+            
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/pokemon/pidgeotto-1.webp" alt="imagen de figura funkopop de pidgeotto">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">pokemon</p>
+              <p class="title">pidgeoto</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article class="slider__card">
+            <picture class="slider__card__img">
+              <img src="../../img/harry-potter/luna-1.webp" alt="imagen de figura funkopop de luna lovegood con mascara de leon">
+            </picture>
+            <div class="slider__card__content">
+              <p class="category">harry potter</p>
+              <p class="title">luna lovegood lion mask</p>
+              <p class="price">$ 1799,99.-</p>
+              <p class="medio-de-pago">3 cuotas sin interes</p>
+            </div>            
+          </article>
+        </section>
+      </section> -->
+      <section class="pagination"></section>
+    </main>
+
+    <footer id="footer">
+      <section class="links">
+        <div class="links__pages">
+          <a href="./shop.html">shop</a>
+          <a href="">registrarse</a>
+          <a href="">ingresar</a>
+          <a href="">contacto</a>
+        </div>
+        <picture class="footer__logo">
+          <img src="../../img/branding/isotype.svg" alt="funkoshop logo">
+        </picture>
+      </section>
+      <section class="licence">
+        <p>All rights reserved 2022 - Funkoshop</p>
+      </section>
+
+    </footer>
+  </body>
+</html>
