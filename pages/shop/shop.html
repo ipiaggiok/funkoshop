@@ -33,41 +33,22 @@
       </navbar>
     </header>
 
-    <main id="main main__shop">
-      <section class="filters">
-        <label for="item">buscar <br>
-          <input name="item" id="item" type="text" placeholder="item o categoria">
-        </label>
-        <label for="order">ordenar por <br>
-          <select name="order" id="order" aria-placeholder="Mayor a menor">
+    <main id="shop">
+      <aside class="shop__filters">
+        <div class="filters__search">
+          <label for="search">buscar</label>
+          <input name="search" id="search" type="text" placeholder="item o categoria">
+        </div>
+        <div class="filters__search">
+          <label for="order-by">ordenar por</label>
+          <select name="order-by" id="order-by">
+            <option value="az">a-z</option>
+            <option value="za">z-a</option>
             <option value="min">menor precio</option>
             <option value="max">mayor precio</option>
           </select>
-        </label>
-        <p>precio</p>
-        <label for="min-price">min
-          <input name="min-price" id="min-price" type="text" placeholder="0">
-        </label>
-        <p>-</p>
-        <label for="max-price">min
-          <input name="max-price" id="max-price" type="text" placeholder="0">
-        </label>
-        <fieldset>
-          <legend>filtrar</legend>
-          <label for="nuevos">
-            <input name="nuevos" id="nuevos" type="checkbox">nuevos
-          </label>
-          <label for="ofertas">
-            <input name="ofertas" id="ofertas" type="checkbox">ofertas
-          </label>
-          <label for="ed-especial">
-            <input name="ed-especial" id="ed-especial" type="checkbox">edición especial
-          </label>
-          <label for="favoritos">
-            <input name="favoritos" id="favoritos" type="checkbox">favoritos
-          </label>
-        </fieldset>
-      </section>
+        </div>
+      </aside>
       <!-- <section class="news shop__cards">
         <section class="news__slider">
           <article class="slider__card">
