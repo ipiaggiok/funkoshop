@@ -341,17 +341,19 @@ main, footer {
 }
 
 
-/* Shop */
+/* Shop Page */
 
 #shop {
     padding-top:var(--spacing-36);
+
 }
 
 .shop__filters {
-display: flex;
-flex-direction: column;
-gap: 10px;
-width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 170px;
+    font-family: var(--base-font);
 }
 
 .shop__filters div {
@@ -359,16 +361,49 @@ width: 160px;
     flex-direction: column;
 }
 
-.shop__filters label {
+.shop__filters label, 
+.filters__price__title,
+.filters__checks__title {
     text-transform: uppercase;
     font-size: var(--font-small);
     font-weight: 500;
     padding-bottom: 5px;
 }
 
-.shop__filters input, .shop__filters select {
+.shop__filters input,
+.shop__filters select {
+    font-family: var(--base-font);
     height: 25px;
     padding: 0 3px;
     border-radius: 4px;
     border-style: solid;
+}
+
+.filters__price div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.filters__price label {
+    font-size: var(--font-xsmall);
+}
+
+.filters__price input {
+    width: 43px;
+    text-align: center;
+}
+
+.filters__checks div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.filters__checks label {
+    padding-top: 2px;
+    font-size: var(--font-xsmall);
 }

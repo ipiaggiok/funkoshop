@@ -39,14 +39,42 @@
           <label for="search">buscar</label>
           <input name="search" id="search" type="text" placeholder="item o categoria">
         </div>
-        <div class="filters__search">
+        <div class="filters__order-by">
           <label for="order-by">ordenar por</label>
           <select name="order-by" id="order-by">
-            <option value="az">a-z</option>
-            <option value="za">z-a</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
             <option value="min">menor precio</option>
             <option value="max">mayor precio</option>
           </select>
+        </div>
+        <div class="filters__price">
+          <span class="filters__price__title">precio</span>
+          <div>
+            <label for="min">min</label>
+            <input name="min" id="min" type="text" placeholder="0">
+            <label for="max">- max</label>
+            <input name="max" id="max" type="text" placeholder="0">
+          </div>
+        </div>
+        <div class="filters__checks">
+          <span class="filters__checks__title">filtros</span>
+            <div>
+              <input type="checkbox" name="nuevos" id="nuevos">
+              <label for="nuevos">nuevos</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ofertas" id="ofertas">
+              <label for="ofertas">ofertas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ed-esp" id="ed-esp">
+              <label for="ed-esp">edición especial</label>
+            </div>
+            <div>
+              <input type="checkbox" name="favs" id="favs">
+              <label for="favs">favoritos</label>
+            </div>          
         </div>
       </aside>
       <!-- <section class="news shop__cards">
