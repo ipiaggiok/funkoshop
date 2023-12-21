@@ -437,6 +437,12 @@ main, footer {
     font-family: var(--base-font);
 }
 
+.item__card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .item__card__content .category {
     font-size: var(--font-small);
 }
@@ -448,5 +454,56 @@ main, footer {
 
 .item__card__content .description {
     font-size: var(--font-medium);
+    font-weight: 300;
+}
+
+.item__card__content .price {
+    font-size: var(--font-large);
     font-weight: 400;
+    color: var(--dark-bg-solid);
+}
+
+.item__card__content .qty {
+    display: flex;
+    gap: 30px;
+    align-items: center;  
+}
+
+.item__card__content .counter {
+    display: flex;
+}
+
+.item__card__content .counter p {
+    font-size: var(--font-medium);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.item__card__content .counter .min,
+.item__card__content .counter .plus {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    cursor: pointer;
+}
+
+.item__card__content .counter__btn {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: 5px 10px;
+    font-size: var(--font-xsmall);
+}
+
+.item__card__content .medios-de-pago {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+}
+
+.underlined {
+    text-decoration: underline;
+    margin-right: 3px;
+}
+
+.item__card__content .med-pago {
+    display: flex;
 }
